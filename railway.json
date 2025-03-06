@@ -1,0 +1,10 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "nimble build -d:danger --mm:refc && nimble scss && nimble md"
+  },
+  "deploy": {
+    "startCommand": "./nitter",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
